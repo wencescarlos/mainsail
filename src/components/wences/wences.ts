@@ -46,7 +46,10 @@ export function getMaintenance(printer: PrinterState): WencesMaintenance {
 // Alerts for the topbar: an interrupted print that can be recovered and due maintenance
 export function getAlerts(printer: PrinterState): { recover: boolean; maintenance: string[] } {
     return {
-        recover: !!getSaveVariables(printer).plr,
+        // 'plr' is saved on every layer while printing, so it only means "interrupted" when idle
+        recover:
+            !!getSaveVariables(printer).plr &&
+            !['printing', 'paused'].includes(printer?.print_stats?.state ?? ''),
         maintenance: getMaintenance(printer).due,
     }
 }
