@@ -18,6 +18,7 @@ import {
     mdiHistory,
     mdiTimelapse,
     mdiWrench,
+    mdiTune,
 } from '@mdi/js'
 
 const routes: AppRoute[] = [
@@ -71,6 +72,17 @@ const routes: AppRoute[] = [
         showInNavi: true,
         klipperComponent: 'bed_mesh',
         position: 40,
+    },
+    {
+        name: 'calibration',
+        title: 'Calibration',
+        path: '/calibracion',
+        icon: mdiTune,
+        component: () => import('../pages/Calibracion.vue'),
+        alwaysShow: false,
+        showInNavi: true,
+        position: 45,
+        fullscreen: true,
     },
     {
         name: 'gcodefiles',

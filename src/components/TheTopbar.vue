@@ -10,6 +10,7 @@
             <v-toolbar-title class="text-no-wrap ml-0 pl-2 mr-2">{{ printerName }}</v-toolbar-title>
             <printer-selector v-if="countPrinters" />
             <v-spacer />
+            <wences-topbar-alerts v-if="klippyIsConnected" />
             <input
                 ref="fileUploadAndStart"
                 type="file"
@@ -89,6 +90,7 @@ import TheNotificationMenu from '@/components/notifications/TheNotificationMenu.
 import { topbarHeight } from '@/store/variables'
 import { mdiAlertOctagonOutline, mdiContentSave, mdiFileUpload, mdiClose, mdiCloseThick } from '@mdi/js'
 import EmergencyStopDialog from '@/components/dialogs/EmergencyStopDialog.vue'
+import WencesTopbarAlerts from '@/components/wences/WencesTopbarAlerts.vue'
 import InlineSvg from 'vue-inline-svg'
 import ThemeMixin from '@/components/mixins/theme'
 
@@ -111,6 +113,7 @@ type uploadSnackbar = {
         PrinterSelector,
         MainsailLogo,
         TheNotificationMenu,
+        WencesTopbarAlerts,
     },
 })
 export default class TheTopbar extends Mixins(BaseMixin, ThemeMixin) {

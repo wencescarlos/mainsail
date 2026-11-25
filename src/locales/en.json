@@ -87,7 +87,10 @@
             "SAVE_CONFIG": "SAVE CONFIG",
             "Uploading": "Uploading",
             "UploadOfFileSuccessful": "Upload of {file} successful!",
-            "UploadPrint": "Upload & Print"
+            "UploadPrint": "Upload & Print",
+            "WencesMaintenance": "Maintenance",
+            "WencesRecover": "Recover",
+            "WencesRecoverHint": "A print was interrupted: click to recover it (asks before doing anything)"
         },
         "TopCornerMenu": {
             "ConfirmationDialog": {
@@ -949,6 +952,38 @@
             },
             "Unknown": "Unknown"
         },
+        "PrinterHealthPanel": {
+            "Due": "Due now",
+            "Filament": "Filament",
+            "Filaments": "Filaments",
+            "Headline": "Printer health",
+            "Hours": "Print hours",
+            "InHours": "in {hours} h",
+            "LastLoss": "Last loss",
+            "LeftHigher": "left higher",
+            "Losses": "Losses",
+            "Magnets": "Magnets",
+            "MagnetZones": "{count} zones in the mesh",
+            "Maintenance": "Maintenance",
+            "Mechanics": "Mechanics",
+            "Next": "Next task",
+            "NoLosses": "none",
+            "OpenCalibration": "Calibration pages",
+            "RealHeight": "Real height / max.",
+            "RecoveredAlone": "recovered by itself",
+            "Restarts": "{count} restarts",
+            "RightHigher": "right higher",
+            "Sensorless": "Sensorless X / Y",
+            "Sheet": "Sheet",
+            "Skew": "XY skew",
+            "TopStops": "Top stops",
+            "Uncalibrated": "not calibrated",
+            "Wifi": "WiFi",
+            "WifiSince": "Sonar watching since",
+            "ZAxis": "Z axis and sheet",
+            "ZNuts": "Z nuts play",
+            "ZOffset": "z_offset"
+        },
         "SpoolmanPanel": {
             "ActiveSpool": "Active Spool",
             "ChangeSpool": "Change Spool",
@@ -1096,6 +1131,7 @@
         "TurnDeviceOn": "Turn {device} on"
     },
     "Router": {
+        "Calibration": "Calibration",
         "Console": "Console",
         "Dashboard": "Dashboard",
         "G-Code Files": "G-Code Files",

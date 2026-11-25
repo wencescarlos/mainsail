@@ -87,7 +87,10 @@
             "SAVE_CONFIG": "GUARDAR CONFIG.",
             "Uploading": "Cargando",
             "UploadOfFileSuccessful": "¡{file} cargado con éxito!",
-            "UploadPrint": "Cargar e imprimir"
+            "UploadPrint": "Cargar e imprimir",
+            "WencesMaintenance": "Mantenimiento",
+            "WencesRecover": "Recuperar",
+            "WencesRecoverHint": "Se interrumpió una impresión: pulsa para recuperarla (pregunta antes de hacer nada)"
         },
         "TopCornerMenu": {
             "ConfirmationDialog": {
@@ -685,6 +688,38 @@
                 "Empty": "Vacío"
             }
         },
+        "PrinterHealthPanel": {
+            "Due": "Toca ya",
+            "Filament": "Filamento",
+            "Filaments": "Filamentos",
+            "Headline": "Estado de la impresora",
+            "Hours": "Horas de impresión",
+            "InHours": "en {hours} h",
+            "LastLoss": "Último corte",
+            "LeftHigher": "izq. más alto",
+            "Losses": "Cortes",
+            "Magnets": "Imanes",
+            "MagnetZones": "{count} zonas en la malla",
+            "Maintenance": "Mantenimiento",
+            "Mechanics": "Mecánica",
+            "Next": "Próxima tarea",
+            "NoLosses": "ninguno",
+            "OpenCalibration": "Páginas de calibración",
+            "RealHeight": "Altura real / máx.",
+            "RecoveredAlone": "volvió sola",
+            "Restarts": "{count} reinicios",
+            "RightHigher": "der. más alto",
+            "Sensorless": "Sensorless X / Y",
+            "Sheet": "Lámina",
+            "Skew": "Escuadra XY",
+            "TopStops": "Topes de Z",
+            "Uncalibrated": "sin calibrar",
+            "Wifi": "WiFi",
+            "WifiSince": "Sonar vigilando desde",
+            "ZAxis": "Eje Z y lámina",
+            "ZNuts": "Holgura tuercas Z",
+            "ZOffset": "z_offset"
+        },
         "SpoolmanPanel": {
             "ChangeSpool": "Cambiar carrete",
             "DaysAgo": "Hace {days} días",
@@ -824,6 +859,7 @@
         "TurnDeviceOn": "Encender {device}"
     },
     "Router": {
+        "Calibration": "Calibración",
         "Console": "Consola",
         "Dashboard": "Panel de control",
         "G-Code Files": "Archivos G-Code",

@@ -2,6 +2,7 @@ import { GetterTree } from 'vuex'
 import { GuiState, GuiStateDashboard, GuiStateLayoutoption } from '@/store/gui/types'
 import { GuiMacrosStateMacrogroup } from '@/store/gui/macros/types'
 import { allDashboardPanels, defaultTheme, themes } from '@/store/variables'
+import { hasWencesMacros } from '@/components/wences/wences'
 import { RootState, Theme } from '@/store/types'
 
 export const getters: GetterTree<GuiState, RootState> = {
@@ -95,6 +96,11 @@ export const getters: GetterTree<GuiState, RootState> = {
         // remove mmu panel, if no Happy Hare exists in Klipper
         if (!rootState.printer?.mmu) {
             allPanels = allPanels.filter((name) => name !== 'mmu')
+        }
+
+        // remove printer-health panel, if the Wences MK2 macros (_MANT) are not installed
+        if (!hasWencesMacros(rootState.printer ?? {})) {
+            allPanels = allPanels.filter((name) => name !== 'printer-health')
         }
 
         // remove led_effects panel, if no led_effect object exists in Klipper

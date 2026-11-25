@@ -121,6 +121,7 @@ export const allDashboardPanels = [
     'mmu',
     'temperature',
     'webcam',
+    'printer-health',
 ]
 
 export const thumbnailSmallMin = 30
